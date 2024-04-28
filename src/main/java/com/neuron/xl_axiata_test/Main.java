@@ -1,9 +1,13 @@
 package com.neuron.xl_axiata_test;
 
 import com.neuron.xl_axiata_test.nomor_dua.Pyramid;
+import com.neuron.xl_axiata_test.nomor_empat.TextInFile;
+import com.neuron.xl_axiata_test.nomor_lima.SortHashMap;
 import com.neuron.xl_axiata_test.nomor_tiga.SumOfArray;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -20,8 +24,15 @@ public class Main
         // Nomor 2
         nomorDua();
 
-        //nomor 3
+        // Nomor 3
         nomorTiga();
+
+        // Nomor 4
+        nomorEmpat();
+
+        // Nomor 5
+        nomorLima();
+
     }
 
     private static void printNumsWithStream(IntStream streamNums) {
@@ -58,12 +69,33 @@ public class Main
         Pyramid.GeneratePyramid(height);
     }
 
-    private static void nomorTiga(){
+    private static void nomorTiga() {
         int[] numsArr = { 10, 10, 10, 10, 10, 10 };
 
         System.out.println();
         System.out.println("=".repeat(12) + " 03. Sum Of Array " + "=".repeat(12));
         System.out.print("Jumlah: ");
         SumOfArray.FindSumOfArray(numsArr);
+    }
+
+    private static void nomorEmpat() {
+        String fileName = "example.txt";
+        String searchFor = "Hello";
+
+        System.out.println();
+        System.out.println("=".repeat(12) + " 04. Find String in File " + "=".repeat(12));
+        TextInFile.findTextInFile(fileName, searchFor);
+    }
+
+    private static void nomorLima() {
+        Map<String, Integer> hashMap = new HashMap<>();
+        hashMap.put("Alice", 23);
+        hashMap.put("Bob", 45);
+        hashMap.put("Charlie", 30);
+        hashMap.put("David", 10);
+
+        System.out.println();
+        System.out.println("=".repeat(12) + " 05. Sort Hash Map" + "=".repeat(12));
+        SortHashMap.SortHashMap(hashMap);
     }
 }
