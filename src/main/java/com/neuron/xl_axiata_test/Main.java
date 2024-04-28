@@ -1,6 +1,7 @@
 package com.neuron.xl_axiata_test;
 
 import com.neuron.xl_axiata_test.nomor_dua.Pyramid;
+import com.neuron.xl_axiata_test.nomor_tiga.SumOfArray;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -18,6 +19,9 @@ public class Main
 
         // Nomor 2
         nomorDua();
+
+        //nomor 3
+        nomorTiga();
     }
 
     private static void printNumsWithStream(IntStream streamNums) {
@@ -41,13 +45,25 @@ public class Main
         // implementasi algoritma merge sort
         MergeSort(nums);
 
-        System.out.println("\n" + "=".repeat(16) + " Sorted  Array " + "=".repeat(16));
+        System.out.println("\n" + "=".repeat(14) + " 01. Sorted  Array " + "=".repeat(14));
         printNumsWithStream(Arrays.stream(nums));
         //System.out.println(Arrays.toString(nums));
     }
 
     private static void nomorDua(){
         int height = 5;
+
+        System.out.println();
+        System.out.println("=".repeat(12) + " 02. Pyramid Character " + "=".repeat(12));
         Pyramid.GeneratePyramid(height);
+    }
+
+    private static void nomorTiga(){
+        int[] numsArr = { 10, 10, 10, 10, 10, 10 };
+
+        System.out.println();
+        System.out.println("=".repeat(12) + " 03. Sum Of Array " + "=".repeat(12));
+        System.out.print("Jumlah: ");
+        SumOfArray.FindSumOfArray(numsArr);
     }
 }
