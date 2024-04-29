@@ -1,45 +1,21 @@
 package com.neuron.xl_axiata_test.nomor_empat;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.BufferOverflowException;
+import java.util.AbstractMap;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 public class TextInFile {
-    public static void findTextInFile(String fileName, String searchFor) {
-        createFile(fileName);
+    private String fileName;
+    private String pathFile;
 
-        readFile(fileName, searchFor);
-
-
+    public TextInFile(String fileName, String pathFile) {
+        this.fileName = fileName;
+        this.pathFile = pathFile;
     }
 
-    public static void readFile(String filename, String searchFor) {
-        File exampleFile = new File(filename);
-        Boolean isFound = false;
-        int lineNumber = 0;
-        try {
-            FileReader fr = new FileReader(exampleFile);
-            Scanner scanner = new Scanner(fr);
-            while(scanner.hasNextLine()){
-                lineNumber++;
-                if(scanner.nextLine().contains(searchFor)){
-                    System.out.println("String " + searchFor + " ditemukan pada baris " + lineNumber);
-                    isFound = true;
-                    break;
-                }
-            }
-
-            if (!isFound) {
-                System.out.println("String " + searchFor + " tidak ditemukan");
-            }
-        }catch (FileNotFoundException e){
-            System.out.println(e.getStackTrace());
-        }
-    }
-
-    public static void createFile(String filename) {
+    private void createFile(String filename) {
         try {
             File myTextFile = new File(filename);
             if (!myTextFile.exists()) {
@@ -54,4 +30,45 @@ public class TextInFile {
             e.getStackTrace();
         }
     }
+
+    private void readFile(String filename, String searchFor) {
+        File exampleFile = new File(filename);
+        boolean isFound = false;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(exampleFile))) {
+            isFound = IntStream.range(0, Integer.MAX_VALUE)
+                    .mapToObj( lineNumber -> {
+                        try {
+                            String line = reader.readLine();
+                            if ( line == null ){
+                                return null;
+                            }
+                            return new AbstractMap.SimpleEntry<>(lineNumber + 1, line);
+                        }catch (IOException e){
+                            return null;
+                        }
+                    })
+                    .takeWhile(dataEntry -> dataEntry != null )
+                    .anyMatch( dataEntry -> {
+                        if (dataEntry.getValue().contains(searchFor)){
+                            System.out.println("String " + searchFor + " ditemukan di pada baris " + dataEntry.getKey());
+                            return true;
+                        }
+
+                        return  false;
+                    } );
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        if(!isFound){
+            System.out.println("String " + searchFor + " tidak ditemukan !");
+        }
+    }
+
+    public void findTextInFile(String searchFor) {
+        createFile(this.fileName);
+        readFile(this.fileName, searchFor);
+    }
+
 }

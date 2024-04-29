@@ -79,20 +79,19 @@ public class Main
     }
 
     private static void nomorEmpat() {
-        String fileName = "example.txt";
-        String searchFor = "Hello";
+        TextInFile textInFile = new TextInFile("example.txt", "./");
+        String searchFor = "asdfasdf";
 
         System.out.println();
         System.out.println("=".repeat(12) + " 04. Find String in File " + "=".repeat(12));
-        TextInFile.findTextInFile(fileName, searchFor);
+        textInFile.findTextInFile(searchFor);
     }
 
     private static void nomorLima() {
         Map<String, Integer> hashMap = new HashMap<>();
-        hashMap.put("Alice", 23);
-        hashMap.put("Bob", 45);
-        hashMap.put("Charlie", 30);
-        hashMap.put("David", 10);
+        hashMap.put("Lee", 23);
+        hashMap.put("Roy", 22);
+        hashMap.put("Akbar", 25);
 
         System.out.println();
         System.out.println("=".repeat(12) + " 05. Sort Hash Map" + "=".repeat(12));
