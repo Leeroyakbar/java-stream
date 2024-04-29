@@ -1,4 +1,4 @@
-package com.neuron.xl_axiata_test.nomor_satu;
+package com.neuron.java_stream_xl.nomor_satu;
 
 public class MergeSort {
     public MergeSort() {
@@ -12,7 +12,6 @@ public class MergeSort {
 
         int middleIndex = numsLength / 2;
         int[] leftSide = new int[middleIndex];
-        ;
         int[] rightSide = new int[numsLength - middleIndex];
 
         for (int i = 0; i < middleIndex ; i++) {
@@ -57,5 +56,4 @@ public class MergeSort {
             k++;
         }
     }
-
 }

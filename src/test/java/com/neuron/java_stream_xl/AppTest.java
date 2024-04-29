@@ -1,4 +1,4 @@
-package com.neuron.xl_axiata_test;
+package com.neuron.java_stream_xl;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -1,4 +1,4 @@
-package com.neuron.xl_axiata_test.nomor_tiga;
+package com.neuron.java_stream_xl.nomor_tiga;
 
 import java.util.Arrays;
 

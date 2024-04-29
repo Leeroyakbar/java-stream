@@ -1,4 +1,4 @@
-package com.neuron.xl_axiata_test.nomor_dua;
+package com.neuron.java_stream_xl.nomor_dua;
 
 import java.util.stream.IntStream;
 

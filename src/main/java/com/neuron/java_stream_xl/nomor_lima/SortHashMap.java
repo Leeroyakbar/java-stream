@@ -1,8 +1,7 @@
-package com.neuron.xl_axiata_test.nomor_lima;
+package com.neuron.java_stream_xl.nomor_lima;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class SortHashMap {
 

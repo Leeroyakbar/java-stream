@@ -1,10 +1,10 @@
-package com.neuron.xl_axiata_test;
+package com.neuron.java_stream_xl;
 
-import com.neuron.xl_axiata_test.nomor_dua.Pyramid;
-import com.neuron.xl_axiata_test.nomor_empat.TextInFile;
-import com.neuron.xl_axiata_test.nomor_lima.SortHashMap;
-import com.neuron.xl_axiata_test.nomor_satu.MergeSort;
-import com.neuron.xl_axiata_test.nomor_tiga.SumOfArray;
+import com.neuron.java_stream_xl.nomor_dua.Pyramid;
+import com.neuron.java_stream_xl.nomor_empat.TextInFile;
+import com.neuron.java_stream_xl.nomor_lima.SortHashMap;
+import com.neuron.java_stream_xl.nomor_satu.MergeSort;
+import com.neuron.java_stream_xl.nomor_tiga.SumOfArray;
 
 import java.util.Arrays;
 import java.util.HashMap;

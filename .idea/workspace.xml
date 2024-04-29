@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9fb02b1-27ea-4560-a38a-43f3c4242c08" name="Changes" comment="update: 01. Class Merge Sort">
+    <list default="true" id="b9fb02b1-27ea-4560-a38a-43f3c4242c08" name="Changes" comment="update: mergesort and pyramid">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_dua/Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_dua/Pyramid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_satu/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_satu/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_tiga/SumOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_tiga/SumOfArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/neuron/Documents/Enigma/test/xl-axiata-test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/Documents/Enigma/Backend/challenge/wmb-api-app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -65,11 +61,11 @@
 }</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.neuron.xl_axiata_test.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.neuron.java_stream_xl.Main" />
       <module name="merge_sort" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.neuron.xl_axiata_test.*" />
+          <option name="PATTERN" value="com.neuron.java_stream_xl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,7 +98,8 @@
       <workItem from="1714268444139" duration="2357000" />
       <workItem from="1714273548653" duration="293000" />
       <workItem from="1714283101445" duration="6108000" />
-      <workItem from="1714349396046" duration="5407000" />
+      <workItem from="1714349396046" duration="5987000" />
+      <workItem from="1714383618312" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="update: 04. TextInFile with oop">
       <option name="closed" value="true" />
@@ -144,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714356381435</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update: mergesort and pyramid">
+      <option name="closed" value="true" />
+      <created>1714357483273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714357483273</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +160,7 @@
     <MESSAGE value="update: 05. Sort Hash Map implements in java stream" />
     <MESSAGE value="update: 05. Sort Hash Map with oop" />
     <MESSAGE value="update: 01. Class Merge Sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: 01. Class Merge Sort" />
+    <MESSAGE value="update: mergesort and pyramid" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: mergesort and pyramid" />
   </component>
 </project>

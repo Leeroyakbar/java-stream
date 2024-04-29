@@ -1,9 +1,7 @@
-package com.neuron.xl_axiata_test.nomor_empat;
+package com.neuron.java_stream_xl.nomor_empat;
 
 import java.io.*;
-import java.nio.BufferOverflowException;
 import java.util.AbstractMap;
-import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class TextInFile {
