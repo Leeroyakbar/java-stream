@@ -63,20 +63,21 @@ public class Main
     }
 
     private static void nomorDua(){
-        int height = 5;
+        Pyramid pyramid = new Pyramid(5);
 
         System.out.println();
         System.out.println("=".repeat(12) + " 02. Pyramid Character " + "=".repeat(12));
-        Pyramid.GeneratePyramid(height);
+        pyramid.GeneratePyramid();
     }
 
     private static void nomorTiga() {
         int[] numsArr = { 10, 10, 10, 10, 10, 10 };
+        SumOfArray sumOfArray = new SumOfArray(numsArr);
 
         System.out.println();
         System.out.println("=".repeat(12) + " 03. Sum Of Array " + "=".repeat(12));
         System.out.print("Jumlah: ");
-        SumOfArray.FindSumOfArray(numsArr);
+        sumOfArray.findSumOfArray();
     }
 
     private static void nomorEmpat() {

@@ -3,7 +3,13 @@ package com.neuron.xl_axiata_test.nomor_dua;
 import java.util.stream.IntStream;
 
 public class Pyramid {
-    public static void GeneratePyramid(int height) {
+    private int height;
+
+    public Pyramid(int height) {
+        this.height = height;
+    }
+
+    public void GeneratePyramid() {
         IntStream.range(1, height + 1)
                 .forEach( i -> {
                     int numChars = 2 * i - 1;

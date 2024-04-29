@@ -1,7 +1,6 @@
 package com.neuron.xl_axiata_test.nomor_satu;
 
 public class MergeSort {
-
     public MergeSort() {
     }
 

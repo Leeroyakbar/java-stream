@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9fb02b1-27ea-4560-a38a-43f3c4242c08" name="Changes" comment="update: 05. Sort Hash Map with oop">
+    <list default="true" id="b9fb02b1-27ea-4560-a38a-43f3c4242c08" name="Changes" comment="update: 01. Class Merge Sort">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_dua/Pyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_dua/Pyramid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_satu/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_satu/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_tiga/SumOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neuron/xl_axiata_test/nomor_tiga/SumOfArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
       <workItem from="1714268444139" duration="2357000" />
       <workItem from="1714273548653" duration="293000" />
       <workItem from="1714283101445" duration="6108000" />
-      <workItem from="1714349396046" duration="4798000" />
+      <workItem from="1714349396046" duration="5407000" />
     </task>
     <task id="LOCAL-00001" summary="update: 04. TextInFile with oop">
       <option name="closed" value="true" />
@@ -134,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714354942389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update: 01. Class Merge Sort">
+      <option name="closed" value="true" />
+      <created>1714356381435</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714356381435</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +154,7 @@
     <MESSAGE value="update: 04. TextInFile with oop" />
     <MESSAGE value="update: 05. Sort Hash Map implements in java stream" />
     <MESSAGE value="update: 05. Sort Hash Map with oop" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: 05. Sort Hash Map with oop" />
+    <MESSAGE value="update: 01. Class Merge Sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: 01. Class Merge Sort" />
   </component>
 </project>
