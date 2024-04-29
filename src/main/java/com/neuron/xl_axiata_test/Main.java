@@ -3,6 +3,7 @@ package com.neuron.xl_axiata_test;
 import com.neuron.xl_axiata_test.nomor_dua.Pyramid;
 import com.neuron.xl_axiata_test.nomor_empat.TextInFile;
 import com.neuron.xl_axiata_test.nomor_lima.SortHashMap;
+import com.neuron.xl_axiata_test.nomor_satu.MergeSort;
 import com.neuron.xl_axiata_test.nomor_tiga.SumOfArray;
 
 import java.util.Arrays;
@@ -12,7 +13,6 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static com.neuron.xl_axiata_test.nomor_satu.MergeSort.MergeSort;
 
 public class Main
 {
@@ -44,6 +44,7 @@ public class Main
     private static void nomorSatu() {
         Random random = new Random();
         int[] nums = new int[10];
+        MergeSort mergeSort = new MergeSort();
 
         for (int i = 0; i < nums.length; i++) {
             nums[i] = random.nextInt(1000);
@@ -54,7 +55,7 @@ public class Main
         printNumsWithStream(Arrays.stream(nums));
 
         // implementasi algoritma merge sort
-        MergeSort(nums);
+        mergeSort.getMergeSort(nums);
 
         System.out.println("\n" + "=".repeat(14) + " 01. Sorted  Array " + "=".repeat(14));
         printNumsWithStream(Arrays.stream(nums));

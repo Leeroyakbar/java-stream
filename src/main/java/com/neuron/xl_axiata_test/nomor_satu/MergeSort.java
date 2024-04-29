@@ -2,7 +2,10 @@ package com.neuron.xl_axiata_test.nomor_satu;
 
 public class MergeSort {
 
-    public static void MergeSort(int[] nums){
+    public MergeSort() {
+    }
+
+    public void getMergeSort(int[] nums){
         int numsLength = nums.length;
         if(numsLength < 2){
             return;
@@ -10,6 +13,7 @@ public class MergeSort {
 
         int middleIndex = numsLength / 2;
         int[] leftSide = new int[middleIndex];
+        ;
         int[] rightSide = new int[numsLength - middleIndex];
 
         for (int i = 0; i < middleIndex ; i++) {
@@ -20,14 +24,14 @@ public class MergeSort {
             rightSide[i - middleIndex] = nums[i];
         }
 
-        MergeSort(leftSide);
-        MergeSort(rightSide);
+        getMergeSort(leftSide);
+        getMergeSort(rightSide);
 
         //merge
         merge(nums, leftSide, rightSide);
     }
 
-    public static void merge(int[] nums, int[] leftSide, int[] rightSide){
+    private void merge(int[] nums, int[] leftSide, int[] rightSide){
         int leftSize = leftSide.length;
         int rightSize = rightSide.length;
         int i = 0, j = 0, k = 0;
