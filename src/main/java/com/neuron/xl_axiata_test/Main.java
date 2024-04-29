@@ -88,13 +88,15 @@ public class Main
     }
 
     private static void nomorLima() {
+
         Map<String, Integer> hashMap = new HashMap<>();
         hashMap.put("Lee", 23);
         hashMap.put("Roy", 22);
         hashMap.put("Akbar", 25);
+        SortHashMap sortHashMap = new SortHashMap(hashMap);
 
         System.out.println();
         System.out.println("=".repeat(12) + " 05. Sort Hash Map" + "=".repeat(12));
-        SortHashMap.SortHashMap(hashMap);
+        sortHashMap.getSortHashMap();
     }
 }
